@@ -20,9 +20,6 @@ const devConfig = {
             // shared: ['react', 'react-dom']
             shared: packageJson.dependencies
         }),
-        new HtmlWebpackPlugin({
-            template: './public/index.html'
-        })
     ]
 }
 
