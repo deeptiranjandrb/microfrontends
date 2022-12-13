@@ -13,8 +13,9 @@ const prodConfig = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //we are asuming that the marketing files are 
-                auth: `auth@${domain}/auth/latest/remoteEntry.js`                                                               //nested in a foleder called marketing/latest
+                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //we are asuming that the marketing files are nested in a foleder called marketing/latest
+                auth: `auth@${domain}/auth/latest/remoteEntry.js`,
+                dashboard: `dashboard@${domain}/auth/latest/remoteEntry.js`,
             },
             shared: packageJson.dependencies
         })
