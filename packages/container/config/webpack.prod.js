@@ -15,7 +15,7 @@ const prodConfig = {
             remotes: {
                 marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`, //we are asuming that the marketing files are nested in a foleder called marketing/latest
                 auth: `auth@${domain}/auth/latest/remoteEntry.js`,
-                dashboard: `dashboard@${domain}/auth/latest/remoteEntry.js`,
+                dashboard: `dashboard@${domain}/dashboard/latest/remoteEntry.js`,
             },
             shared: packageJson.dependencies
         })
